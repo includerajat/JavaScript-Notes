@@ -1,0 +1,18 @@
+- JavaScript is very differently from language called **Java**. 
+- First name is **LiveScript**.
+- Follow **ECMAScript** specification. 
+- JavaScript can run on any program which has **JavaScript Engine**. 
+- Chrome, Edge and Opera has **V8** engine. 
+- Some flavor version also available in the marked, which compile the code to JavaScript and execute successfully in browser.
+	- CoffeeScript
+	- TypeScript
+	- Flow
+	- Dart
+- ECMA-262 is a ECMAScript specification and 262 is a project number here. 
+- We can find detailed about the specification here https://tc39.es/ecma262/.
+- TC stands for technical committee and 39 is committee number.
+- We can see all new proposal here https://github.com/tc39/proposals.
+- Every year new specification version released. 
+- JavaScript references - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference.
+- ES5 → 2009 and ES6 → 2015
+- Developer tool used for finding error in the script.

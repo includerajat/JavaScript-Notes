@@ -15,6 +15,7 @@ It's like total 21 days or ==3 Weeks== means in 1 first week of June, I would co
 Let's start -
 1. The JavaScript Language 
 	1. [Introduction](./Part%201%20-%20%20The%20JavaScript%20Language/Introduction.md)
-	2. [JavaScript Fundamentals](./Part%201%20-%20%20The%20JavaScript%20Language/JavaScript%20Fundamentals.md)	
+	2. [JavaScript Fundamentals](./Part%201%20-%20%20The%20JavaScript%20Language/JavaScript%20Fundamentals.md)
+	3. [Code Quality](./Part%201%20-%20%20The%20JavaScript%20Language/Code%20quality.md)
 
 [1]: https://javascript.info "JavaScript"

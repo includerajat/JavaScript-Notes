@@ -18,5 +18,6 @@ Let's start -
 	2. [JavaScript Fundamentals](./Part%201%20-%20%20The%20JavaScript%20Language/JavaScript%20Fundamentals.md)
 	3. [Code Quality](./Part%201%20-%20%20The%20JavaScript%20Language/Code%20quality.md)
 	4. [Objects Basics](./Part%201%20-%20%20The%20JavaScript%20Language/Objects%20basics.md)
+	5. [Data Types](./Part%201%20-%20%20The%20JavaScript%20Language/Data%20types.md)
 
 [1]: https://javascript.info "JavaScript"

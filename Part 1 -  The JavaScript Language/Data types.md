@@ -61,3 +61,22 @@ Object.is(0,-1); // false
 - `parseInt()` and `parseFloat()`
 - `parseInt(str, radix)`
 - Decimal number stored with precision in number and if we want, how the number stored in the memory, we can use `num.toFixed(20)` method.
+-----------------
+Strings
+- UTF-16
+- backticks provide a functionality to write a multiline string. 
+- Backtick allow us to write a template function before the first backtick and this feature known as [tagged templates](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals#Tagged_templates);
+- String length - `length` property.
+- `str.at(pos)` method.
+- Iterate over the string using `for..of` loop.
+- String is immutable.
+- `str.indexOf(substr[,pos])`
+- `str.includes(substr[,pos]`
+- `str.startsWith` & `str.endsWith`.
+- `str.slice(start[,end])` - part a string start with start with not including end. 
+- `str.substring(start[,end])` if end is small then start, then it simply swap the values (negative arguments treated as zero).
+- `str.substr(start[, length])` - it is browser only feature. 
+- `str.codePointAt(pos)` 
+- `String.codePointAt(code)`
+- `str.localeCompare(str2)`.
+- `str.repeat(n)`.

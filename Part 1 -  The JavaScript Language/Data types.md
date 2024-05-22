@@ -77,6 +77,53 @@ Strings
 - `str.substring(start[,end])` if end is small then start, then it simply swap the values (negative arguments treated as zero).
 - `str.substr(start[, length])` - it is browser only feature. 
 - `str.codePointAt(pos)` 
-- `String.codePointAt(code)`
+- `String.fromCodePoint(code)`
 - `str.localeCompare(str2)`.
 - `str.repeat(n)`.
+---------------
+Arrays
+- `Array` store ordered collection like users, elements and so on.
+```js
+let arr = new Array();
+arr = [];
+arr = ['one', 'two', 'three];
+```
+- `lenght` property.
+- `arr.at(-1)` at method. 
+- `push` appends element at the end.
+- `shift` the element from the begging and make second element first and return the first element.
+- `for..of` loop.
+```js
+let digits = ['one', 'two', 'three'];
+
+for (let digit of digits) {
+	console.log(digit);
+}
+```
+- Clear the array `arr.length = 0` and length property is not a elements in the array, it is actually highest index + 1.
+- Another ways of creating an Array.
+```js
+let arr = new Array('Apple', 'Boy', 'Cat');
+
+arr = new Array(3);
+// it will create the array with length 3 and all the elements in the array are undefined. 
+```
+- `toString` return a comma separated string.
+--------
+Array Methods
+- `.splice` method, it can do everything, insert, replace or remove the element from the array.
+- `arr.splice(start[, deleteCount, elem1, .., elemn])` return the array of remove elements.
+- `arr.slice([start],[end])` - it return an array between start and end and it won't modify the array.
+- if object has property `Symbol.isConcatSpreadable`true then, complier spread the object and treat as an array.
+- `arr.forEach(function(item, index, array) {}`
+- `indexOf` method not able to find `NaN` in an array, we should use `includes` for that. 
+- `arr.find((item, index, array) => {})`
+- `arr.filter` return an array of matching elements.
+- `arr.map` transform the array and return it.
+- `arr.sort` sort the array in place and items sort as string by default.
+- We can modify the behavior by passing the function as argument in the `sort` method.
+- `arr.reverse()`
+- `str.split(delim)` we can use this method on string to convert into the array depending on the delim.
+- `arr.join(glue)` convert the array to string adding glue between the element.
+- `arr.reduce((accum, item, index, array) , [initial])` return a value of array. if initial value is not present in the function then reduce function use first value as initial value and start iteration from second index.
+- `Array.isArray(value)` use for checking object is array or not. 

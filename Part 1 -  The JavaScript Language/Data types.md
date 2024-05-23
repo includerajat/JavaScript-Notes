@@ -127,3 +127,66 @@ Array Methods
 - `arr.join(glue)` convert the array to string adding glue between the element.
 - `arr.reduce((accum, item, index, array) , [initial])` return a value of array. if initial value is not present in the function then reduce function use first value as initial value and start iteration from second index.
 - `Array.isArray(value)` use for checking object is array or not. 
+------------------
+Iterables
+- *Iterables* objects are generalization of an array.
+- When `for..of` starts it's called a method `Symbol.iterator` and it must return an iterator object which has `next` method.
+- Afterward, `for..of` works on that return object and that `next` method should return an object with fields `done` and `value`.
+```js
+let range = {
+    from: 1,
+    to: 5,
+};
+
+range[Symbol.iterator] = function() {
+    return {
+        current: this.from,
+        final: this.to,
+        next() {
+            if (this.current <= this.final) {
+                return {
+                    done: false,
+                    value: this.current++,
+                };
+            }
+            return {
+                done: true,
+            };
+        },
+    };
+};
+
+for (let num of range) {
+    console.log(num);
+}
+```
+- Array and strings are most widely used iterables.
+- `iterables` are the object that implement the `Symbol.iterator` method.
+- Array like objects are object they have indexes and length.
+- `Array.from` take an `iterables` or array-like object and convert into real Array.
+- `Array.from` break right with surrogate pairs also.
+----------
+Map and Set
+- Objects are used for store keyed collection where array are used for ordered collection and Map also used for stored key collection but main difference with object is that, it can store any type of key.
+```js
+let map = new Map();
+
+map.set('1', 'str1');
+map.set(1, 'num1');
+map.set(true, 'bool1');
+
+map.get('1');
+map.get(1);
+
+map.size;
+
+map.delete(1);
+
+map.has(true);
+
+map.clear();
+```
+- `map.keys()` return an iterable for keys.
+- `map.values()` return an iterable for values;
+- `map.entries()` return an iterable for entries `[key,value]` default.
+- map.forEach (( value, key, map))
